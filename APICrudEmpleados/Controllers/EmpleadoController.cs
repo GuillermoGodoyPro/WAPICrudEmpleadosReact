@@ -52,7 +52,7 @@ namespace APICrudEmpleados.Controllers
         {
             dbContext.Empleados.Update(objetoEmpleado);
             await dbContext.SaveChangesAsync();
-            return StatusCode(StatusCodes.Status200OK, new { mensaje = "Empleado Modificadp" });
+            return StatusCode(StatusCodes.Status200OK, new { mensaje = "Empleado Modificado" });
         }
 
         [HttpDelete]
